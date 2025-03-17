@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #080808; /* Cielo azul */
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.girasol {
+    position: absolute;
+    font-size: 30px;
+    animation: caer linear infinite;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#texto {
+    font-style: italic;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#gif-container {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: subir 3s ease-in-out forwards;
+}
+
+@keyframes subir {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 80px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo negro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    color: white; /* Color de texto blanco */
+}
+
+
+    /* Estilo para el texto cursivo */
+footer i {
+    font-style: italic; /* Aplica el estilo cursiva */
+    position: fixed;
+    bottom: 10px; /* Ubica el texto 20px desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    font-size: 15px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+
+
+#gif-container {
+    margin-top: 40px;
+}
+
+#gif {
+    width: 150px;
+}
+
+/* Lluvia de girasoles */
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.girasol {
+    position: absolute;
+    font-size: 30px;
+    animation: caer linear infinite;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.8s ease-in-out;
+}
+
+.video-container.show {
+    bottom: 10%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+.girasol {
+    position: absolute;
+    animation: caer 5s linear forwards;
+}
+
+@keyframes caer {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#mostrarVideo {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+#mostrarVideo:hover {
+    background-color: #ff6347;
+}
+
+.video-container {
+    position: fixed;
+    bottom: -100%; /* Oculto inicialmente */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.8s ease-in-out;
+    z-index: 999;
+}
+
+.video-container.show {
+    bottom: 10%;
+}
+
